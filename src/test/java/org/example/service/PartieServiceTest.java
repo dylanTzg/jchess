@@ -17,7 +17,7 @@ public class PartieServiceTest {
             .joueurService(joueurService)
             .tableService(tableService)
             .build();
-/**
+
     @Test
     public void testInitPartie() {
         Partie partie = partieService.initPartie();
@@ -35,11 +35,5 @@ public class PartieServiceTest {
         assertFalse(partie.isPartieTerminee());
         assertFalse(partie.isPartieNulle());
     }
-
-    @Test
-    public void testCouleursJoueurs() {
-        Partie partie = partieService.initPartie();
-
-        assertNotEquals(partie.getJoueur1().getCouleur(), partie.getJoueur2().getCouleur());
-    }*/
+    
 }
