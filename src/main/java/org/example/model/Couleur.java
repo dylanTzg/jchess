@@ -1,2 +1,6 @@
-package org.example.model;public enum Couleur {
+package org.example.model;
+
+public enum Couleur {
+    BLANC,
+    NOIR
 }

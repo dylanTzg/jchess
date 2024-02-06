@@ -1,17 +1,16 @@
-package org.example.model;
+package org.example.model.pieces;
 
-import lombok.Builder;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
-
+import org.example.model.Couleur;
+import org.example.model.TypePiece;
 @Data
-@RequiredArgsConstructor
-@Builder
 public class Piece {
 
-    private final TypePiece type;
+   private final TypePiece type;
 
-    private final Couleur couleur;
+   private final Couleur couleur;
+
+   private final String casePosition;
 
 
 

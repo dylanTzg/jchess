@@ -1,11 +1,11 @@
 package org.example.model.pieces;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.SuperBuilder;
+import org.example.model.Couleur;
+import org.example.model.TypePiece;
 
-@EqualsAndHashCode(callSuper = true)
-@Data
-@SuperBuilder
 public class Reine extends Piece {
+
+    public Reine(Couleur couleur, String casePosition) {
+        super(TypePiece.REINE, couleur, casePosition);
+    }
 }

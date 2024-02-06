@@ -1,11 +1,10 @@
 package org.example.model.pieces;
 
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.SuperBuilder;
-
-@EqualsAndHashCode(callSuper = true)
-@Data
-@SuperBuilder
+import org.example.model.Couleur;
+import org.example.model.TypePiece;
 public class Cavalier extends Piece{
+
+    public Cavalier(Couleur couleur, String casePosition) {
+        super(TypePiece.CAVALIER, couleur, casePosition);
+    }
 }
